@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+  <script src="/resources/testharness.js"></script>
+  <script src="/resources/testharnessreport.js"></script>
+  <meta http-equiv="Content-Security-Policy" content="require-trusted-types-for 'script'">
+</head>
+<body>
+<script>
+  test(t => {
+    let s = document.createElement('script');
+
+  }, "require-trusted-types-for does not block execution on non-secure pages.");
+</script>
+</body>
